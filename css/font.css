@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Circe Web;
+    src: url(./../fonts/Circe-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Circe Web;
+    src: url(./../fonts/Circe-Bold.ttf);
+    font-weight: 700;
+}

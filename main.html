@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VescoRealty - Страница лота. Загород</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/materialize.min.css" />
+    <link rel="stylesheet" href="./css/selectric.css">
+    <link rel="stylesheet" href="./css/lightgallery.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile.css">
+</head>
+
+<body class="page-node-3">
+
+<div class="main-intro">
+    <div class="w-page">
+        <p class="intro__title">Продаем и управляем недвижимостью более 25 лет</p>
+        <p class="intro__subtitle">250 000 объектов жилой и коммерческой недвижимости по всему миру</p>
+        <div class="intro__filter">
+            <form class="filter">
+                <div class="filter-row">
+                    <div class="form-radios">
+                        <div class="form-radio">
+                            <input type="radio" name="type">
+                            <label>Дом</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="type">
+                            <label>Таунхаус</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" name="type">
+                            <label>Участок</label>
+                        </div>
+                    </div>
+                    <div class="form-inputs price">
+                        <div class="form-input">
+                            <input type="text" placeholder="Площадь от, м2">
+                            <label>Цена от</label>
+                            <span class="reset"></span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="до, м2">
+                            <label>до</label>
+                            <span class="reset"></span>
+                        </div>
+                        <div class="form-radios">
+                            <div class="form-radio">
+                                <input type="radio" name="type">
+                                <label>₽</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="type">
+                                <label>$</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" name="type">
+                                <label>€</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-inputs squares">
+                        <div class="form-input">
+                            <input type="text" placeholder="Площадь от, м2">
+                            <label>Площадь от, м2</label>
+                            <span class="reset"></span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="до, м2">
+                            <label>до, м2</label>
+                            <span class="reset"></span>
+                        </div>
+                    </div>
+                    <div class="form-inputs plot">
+                        <div class="form-input">
+                            <input type="text" placeholder="Площадь от, м2">
+                            <label>Соток от</label>
+                            <span class="reset"></span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="до, м2">
+                            <label>до</label>
+                            <span class="reset"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-row">
+                    <div class="search">
+                        <div class="form-input">
+                            <input type="text" placeholder="Введите параметр, ID, адрес или КП">
+                            <label>Введите параметр, ID, адрес или КП</label>
+                            <span class="icon"></span>
+                            <div class="area">
+                                <span class="area-amount">1</span>
+                                <span class="area-toggler">Шоссе</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-inputs mkad">
+                        <div class="form-input">
+                            <input type="text" placeholder="Площадь от, м2">
+                            <label>От МКАД, км</label>
+                            <span class="reset"></span>
+                        </div>
+                        <div class="form-input">
+                            <input type="text" placeholder="до, м2">
+                            <label>до, км</label>
+                            <span class="reset"></span>
+                        </div>
+                    </div>
+                    <div class="select-field bedroom">
+                        <span class="title">Спален от</span>
+                        <select class="select">
+                            <option class="placeholder" value="placeholder" disabled selected>Спален от</option>
+                            <option value="KV">Квартира</option>
+                            <option value="PH">Пентхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                        </select>
+                    </div>
+                    <div class="select-field type">
+                        <span class="title">Отделка</span>
+                        <span class="amount">1</span>
+                        <select class="select" multiple="multiple">
+                            <option class="placeholder" value="placeholder" disabled>Отделка</option>
+                            <option value="KV">Квартира</option>
+                            <option value="PH">Пентхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                            <option value="TH">Таунхаус</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-tags">
+                        <div class="filter-tag">
+                            Есть балкон или лоджия
+                            <span class="icon"></span>
+                        </div>
+                        <div class="filter-tag">
+                            Несколько санузлов
+                            <span class="icon"></span>
+                        </div>
+                        <div class="filter-tag">
+                            До 15 мин до метро пешком
+                            <span class="icon"></span>
+                        </div>
+                        <div class="filter-tag filter-tag__more">
+                            Ещё 14
+                            <span class="icon"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-row">
+                    <div class="filter-controls">
+                        <div class="filter-toggler">
+                            Ещё параметры
+                            <span class="icon"></span>
+                        </div>
+                        <div class="filter-reset">
+                            Сбросить всё
+                        </div>
+                        <div class="filter-save">
+                            <div class="icon"></div>
+                            Сохарнить поиск
+                        </div>
+                        <a href="#" class="filter-map">
+                            <span class="icon"></span>
+                            На карте
+                        </a>
+                        <button class="filter-submit">
+                            Показать
+                            <span class="amount">
+              168
+            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="intro__categories">
+            <div class="popularCategories">
+                <p class="popularCategories__tag">
+                    Под ключ
+                    <span class="popularCategories__amount">14</span>
+                </p>
+                <p class="popularCategories__tag">
+                    Под отделку
+                    <span class="popularCategories__amount">2352</span>
+                </p>
+                <p class="popularCategories__tag">
+                    Эксклюзивы
+                    <span class="popularCategories__amount">71</span>
+                </p>
+                <p class="popularCategories__tag">
+                    Новый дом
+                    <span class="popularCategories__amount">23</span>
+                </p>
+                <p class="popularCategories__tag">
+                    У леса
+                    <span class="popularCategories__amount">296</span>
+                </p>
+                <p class="popularCategories__tag">
+                    У воды
+                    <span class="popularCategories__amount">158</span>
+                </p>
+                <p class="popularCategories__tag">
+                    Ещё 24
+                    <span class="icon"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w-page">
+
+    <div class="main-categories">
+        <p class="categories__title">Все виды недвижимости</p>
+        <div class="categories__body">123</div>
+    </div>
+
+    <div class="main-market">
+        <p class="market__title">Лучшее на рынке</p>
+        <p class="market__subtitle">Не пропустите</p>
+        <ul class="market__list">
+            <li class="market__item current">Новостройки в Москве</li>
+            <li class="market__item">Эксклюзивная жилая</li>
+            <li class="market__item">Скидки</li>
+            <li class="market__item">Бизнес-центры</li>
+            <li class="market__item">Зарубежные новостройки</li>
+            <li class="market__item">Street Retail</li>
+        </ul>
+        <div class="market__products">
+            <ul class="products tile">
+                <li class="products__item">
+                    <div class="products__content">
+                        <div class="item__preview">
+                            <div class="item__slider swiper slider-main">
+                                <div class="item__image swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img class="swiper-lazy" data-gfo="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" data-src="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" alt="">
+                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="swiper-lazy" data-gfo="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" data-src="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" alt="">
+                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="swiper-lazy" data-gfo="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" data-src="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" alt="">
+                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="swiper-lazy" data-gfo="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" data-src="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" alt="">
+                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="swiper-lazy" data-gfo="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" data-src="https://powernether.github.io/VescoListingWithoutCity/img/itemslider.png" alt="">
+                                        <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="item__overlay">
+                                <div class="item__id">
+                                    ID: 90436
+                                </div>
+                                <div class="item__count">
+                                    <span class="icon"></span>
+                                    9
+                                </div>
+                                <div class="item__video">
+                                    <span class="icon"></span>
+                                </div>
+                                <div class="item__panorama">
+                                    <span class="icon"></span>
+                                    3D
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__content">
+                            <div class="item__main">
+                                <p class="item__title">Апарт-отель Fairmont & Vesper Residences</p>
+                            </div>
+                            <div class="item__where">
+                                <p class="item__address">
+                                    <a href="/gorod/okrug/cao">ЦАО</a>,
+                                    <a href="/gorod/rayon/yakimanka">Якиманка</a>,
+                                    <a href="/gorod/street/b-yakimanka">Большая Якиманка</a>,
+                                    дом 22к3
+                                </p>
+                                <a class="metro metro-8" href="/gorod/metro/polyanka">Полянка</a>
+                            </div>
+                            <div class="item__price">
+                                <p class="item__actual">от 3 153 600 000 ₽</p>
+                                <p class="item__sale">3 200 000 000 ₽</p>
+                            </div>
+                            <div class="item__desc">
+                                <div class="item__desc-item">
+                                    <span class="item__desc-amount">1300-1800 м2</span>
+                                    <span class="item__desc-text">Площадь</span>
+                                </div>
+                                <div class="item__desc-item">
+                                    <span class="item__desc-amount">от 10 (от 5)</span>
+                                    <span class="item__desc-text">Комнат (спален)</span>
+                                </div>
+                                <div class="item__desc-item">
+                                    <span class="item__desc-amount">12</span>
+                                    <span class="item__desc-text">Этажей</span>
+                                </div>
+                            </div>
+                            <div class="item__controls">
+                                <a href="#" class="item__link">
+                                    Подробнее
+                                </a>
+                                <a href="#" class="item__download">
+                                    <span class="icon icon-file"></span>
+                                </a>
+                                <a href="#" class="item__map">
+                                    <span class="icon icon-pin"></span>
+                                </a>
+                                <div class="item__favorite">
+                                    <span class="icon icon-heart"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-about">
+        <p class="about__title">Недвижимость с безупречной репутацией</p>
+        <p class="about__subtitle">Подробнее о Vesco Realty</p>
+        <div class="about__content">
+            <div class="about__left">
+                <p class="about__text">Агентство недвижимости Vesco Realty является структурным подразделением многопрофильного холдинга Vesco Group, в состав которого входят: строительное и архитектурное бюро Vesco Construction, департамент консалтинга и рыночных исследований Vesco Consulting, девелоперское отделение Vesco Development, и многие другие.</p>
+                <p class="about__text">Нам доставляет радость помогать клиентам в выборе живописного земельного участка для «дома мечты», уединенной дачи, удобного офисного помещения, стильного элитного пентхауса — как правило, именно в четырех стенах человек проводит большую часть своей жизни, и в наших силах сделать так, чтобы в этих стенах было красиво и уютно.</p>
+                <a href="#" class="about__button">Подробнее</a>
+            </div>
+            <div class="about__right">
+                <div class="about__video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/HYmFMh50Pzc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <ul class="about__list">
+            <li class="about__item">
+                <p class="about__amount">123 года</p>
+                <div class="about__name">на мировом рынке</div>
+            </li>
+            <li class="about__item">
+                <p class="about__amount">23 года</p>
+                <div class="about__name">на российском рынке</div>
+            </li>
+            <li class="about__item">
+                <p class="about__amount">500+ офисов</p>
+                <div class="about__name">в 60 странах мира</div>
+            </li>
+            <li class="about__item">
+                <p class="about__amount">18 000</p>
+                <div class="about__name">экспертов работают на вас</div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-blog">
+        <p class="blog__title">Блог от профессионалов по недвижимости</p>
+        <ul class="blog__list">
+            <li class="blog__item item-blog">
+                <img src="./img/main-blog1.jpg" alt="Изображение" class="item-blog__image">
+                <a href="#" class="item-blog__title">100+ агентств элитной недвижимости для продажи Вашей собственности</a>
+                <p class="item-blog__date">27 декабря 2021</p>
+            </li>
+            <li class="blog__item item-blog">
+                <img src="./img/main-blog2.jpg" alt="Изображение" class="item-blog__image">
+                <a href="#" class="item-blog__title">100+ агентств элитной недвижимости для продажи Вашей собственности</a>
+                <p class="item-blog__date">27 декабря 2021</p>
+            </li>
+            <li class="blog__item item-blog">
+                <img src="./img/main-blog3.jpg" alt="Изображение" class="item-blog__image">
+                <a href="#" class="item-blog__title">100+ агентств элитной недвижимости для продажи Вашей собственности</a>
+                <p class="item-blog__date">27 декабря 2021</p>
+            </li>
+            <li class="blog__item item-blog">
+                <img src="./img/main-blog4.jpg" alt="Изображение" class="item-blog__image">
+                <a href="#" class="item-blog__title">100+ агентств элитной недвижимости для продажи Вашей собственности</a>
+                <p class="item-blog__date">27 декабря 2021</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-services">
+        <p class="services__title">Агентство элитной недвижимости Vesco Realty</p>
+        <p class="services__subtitle">Услуги на рынке жилой и коммерческой недвижимости</p>
+        <div class="services__content">
+            <div class="services__left">
+                <p class="services__text">Простой способ совершить удачную сделку – выбрать агентство элитной недвижимости с безупречной репутацией. На официальном сайте компании Knight Frank содержится наиболее полная база элитной недвижимости в Москве. Knight Frank занимает лидерские позиции в РФ и на мировом рынке, обеспечивая безукоризненный сервис.</p>
+                <p class="services__text">Международное предприятие Knight Frank появилось в Лондоне в 1896 году. За более чем вековую историю компании удалось стать лидером на рынке недвижимости.</p>
+                <p class="services__headline">Какие услуги оказывает наше агентство?</p>
+                <ul class="services__list">
+                    <li class="services__item">Инвестиционная продажа жилья в столичном регионе и под Москвой. Мы предлагаем квартиры, пентхаусы и апартаменты в самых престижных районах столицы, а также большой выбор земельных участков и элитной загородной недвижимости</li>
+                    <li class="services__item">Продажа офисной, торговой и индустриальной недвижимости, включая логистические центры и складские терминалы</li>
+                    <li class="services__item">Консультации экспертов по профильным аспектам, в том числе юридические и налоговые вопросы</li>
+                    <li class="services__item">Оценка стоимости объектов и рекомендации по оптимизации сделки</li>
+                    <li class="services__item">Полное сопровождение при покупке жилых или коммерческих объектов в Москве и Подмосковье</li>
+                </ul>
+            </div>
+            <div class="services__right">
+                <p class="services__text">Сегодня Knight Frank – больше, чем риэлторское агентство. Это крупнейшая независимая консалтинговая компания, которая успешно предоставляет услуги в Европе, США, Канаде, Китае, Японии, Австралии, на Ближнем Востоке и в других регионах (всего более 500 офисов). В 1996 году открыто первое российское отделение. Сегодня в столице и Санкт-Петербурге действуют три офиса агентства – штат в общей сложности включает около 300 квалифицированных сотрудников.</p>
+                <p class="services__headline">Почему мы?</p>
+                <ul class="services__list">
+                    <li class="services__item">Обширная база эксклюзивных предложений</li>
+                    <li class="services__item">Лучшие консультанты во всех областях недвижимости</li>
+                    <li class="services__item">Собственный департамент аналитики</li>
+                    <li class="services__item">Прекрасное знание столичного рынка</li>
+                    <li class="services__item">Индивидуальный подход к каждому клиенту</li>
+                    <li class="services__item">Десятки профессиональных премий</li>
+                </ul>
+                <p class="services__text">К каждому клиенту прикрепляется персональный консультант, который своевременно предоставит всю необходимую информацию и поможет с выбором недвижимого имущества.</p>
+                <p class="services__text">Если вы планируете купить или продать элитную недвижимость, свяжитесь с менеджером и получите бесплатную консультацию по телефону:
+                    <a href="tel:+74950326864" class="services__link">+7 (495) 032-68-64</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-consultation">
+        <div class="consultation__header">
+            <p class="consultation__title">Консультация экспертов Vesco Realty</p>
+            <div class="consultation__controls">
+                <div class="consultation__prev"><span class="icon"></span></div>
+                <div class="consultation__next"><span class="icon"></span></div>
+            </div>
+        </div>
+        <div class="consultation__slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="consultation__slide slide-consultation">
+                        <div class="slide-consultation__left">
+                            <img src="./img/author.jpg" alt="Марина Шалаева" class="slide-consultation__image">
+                        </div>
+                        <div class="slide-consultation__right">
+                            <div class="slide-consultation__header">
+                                <div class="slide-consultation__title-box">
+                                    <p class="slide-consultation__title">Марина Шалаева</p>
+                                    <p class="slide-consultation__position">Директор департамента зарубежной недвижимости и частных инвестиций</p>
+                                </div>
+                                <div class="slide-consultation__contact">
+                                    <a href="tel:+74950326864" class="slide-consultation__phone">+7 (495) 032-68-64</a>
+                                    <p class="slide-consultation__description">Звонок в офис продаж</p>
+                                </div>
+                            </div>
+                            <p class="slide-consultation__comment">
+                                «Мы занимаемся наиболее ликвидными объектами недвижимости по всему миру, программами гражданства ЕС и ВНЖ. Приглашаю вас на подробную консультацию в наши офисы в Москве, Санкт-Петербурге и на Кипре.»
+                            </p>
+                            <div class="slide-consultation__form form-slide">
+                                <div class="form-slide__row">
+                                    <div class="form-slide__radios">
+                                        <div class="form-slide__radio phone">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                Звонок
+                                            </label>
+                                        </div>
+                                        <div class="form-slide__radio whatsapp">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                WhatsApp
+                                            </label>
+                                        </div>
+                                        <div class="form-slide__radio viber">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                Viber
+                                            </label>
+                                        </div>
+                                        <div class="form-slide__radio telegram">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                Telegram
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-slide__row">
+                                    <div class="form-slide__field">
+                                        <input type="text" placeholder="Имя">
+                                        <label>Имя</label>
+                                    </div>
+                                    <div class="form-slide__field">
+                                        <input type="text" placeholder="Номер телефона">
+                                        <label>Номер телефона</label>
+                                    </div>
+                                    <button class="form-slide__button">Отправить</button>
+                                </div>
+                                <div class="form-slide__row">
+                                    <p class="form-slide__text">Нажимая на кнопку «Отправить заявку», Вы даете согласие на
+                                        <a href="" class="form-slide__link">обработку персональных данных</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="consultation__slide slide-consultation">
+                        <div class="slide-consultation__left">
+                            <img src="./img/author.jpg" alt="Марина Шалаева" class="slide-consultation__image">
+                        </div>
+                        <div class="slide-consultation__right">
+                            <div class="slide-consultation__header">
+                                <div class="slide-consultation__title-box">
+                                    <p class="slide-consultation__title">Марина Шалаева</p>
+                                    <p class="slide-consultation__position">Директор департамента зарубежной недвижимости и частных инвестиций</p>
+                                </div>
+                                <div class="slide-consultation__contact">
+                                    <a href="tel:+74950326864" class="slide-consultation__phone">+7 (495) 032-68-64</a>
+                                    <p class="slide-consultation__description">Звонок в офис продаж</p>
+                                </div>
+                            </div>
+                            <p class="slide-consultation__comment">
+                                «Мы занимаемся наиболее ликвидными объектами недвижимости по всему миру, программами гражданства ЕС и ВНЖ. Приглашаю вас на подробную консультацию в наши офисы в Москве, Санкт-Петербурге и на Кипре.»
+                            </p>
+                            <div class="slide-consultation__form form-slide">
+                                <div class="form-slide__row">
+                                    <div class="form-slide__radios">
+                                        <div class="form-slide__radio phone">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                Звонок
+                                            </label>
+                                        </div>
+                                        <div class="form-slide__radio whatsapp">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                WhatsApp
+                                            </label>
+                                        </div>
+                                        <div class="form-slide__radio viber">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                Viber
+                                            </label>
+                                        </div>
+                                        <div class="form-slide__radio telegram">
+                                            <input type="radio" name="messanger">
+                                            <label>
+                                                <span class="icon"></span>
+                                                Telegram
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-slide__row">
+                                    <div class="form-slide__field">
+                                        <input type="text" placeholder="Имя">
+                                        <label>Имя</label>
+                                    </div>
+                                    <div class="form-slide__field">
+                                        <input type="text" placeholder="Номер телефона">
+                                        <label>Номер телефона</label>
+                                    </div>
+                                    <button class="form-slide__button">Отправить</button>
+                                </div>
+                                <div class="form-slide__row">
+                                    <p class="form-slide__text">Нажимая на кнопку «Отправить заявку», Вы даете согласие на
+                                        <a href="" class="form-slide__link">обработку персональных данных</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="consultation__scrollbar"></div>
+        </div>
+    </div>
+
+    <div class="main-office">
+        <p class="office__title">Приглашаем на встречу в наш офис</p>
+        <p class="office__subtitle">Центр деловой жизни Vesco Realty</p>
+        <div class="office__content">
+            <div class="office__left">
+                <img src="./img/main-office.jpg" alt="" class="office__image">
+            </div>
+            <div class="office__right">
+                <div class="office__address">
+                    <p class="office__text office__text-bold">Центральный офис</p>
+                    <p class="office__text">1-й Магистральный тупик 5а</p>
+                    <p class="office__text">БЦ «Магистраль Плаза» 8-й этаж, правое крыло</p>
+                    <p class="office__text">123 290, Москва</p>
+                </div>
+                <div class="office__time">
+                    <p class="office__text">пн-пт 09:00—21:00</p>
+                    <p class="office__text">сб-вс 10:00–20:00</p>
+                </div>
+                <p class="office__text">На территории есть охраняемая парковка для клиентов — заказать пропуск можно по телефону</p>
+                <a href="tel:+74950326864" class="office__link">+7 (495) 032-68-64</a>
+                <a href="#" class="office__button">Контакты</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="footerTop">
+        <div class="w-page">
+            <div class="footerTop__items">
+                <div class="footerTop__item">
+                    <p class="footerTop__title">Загород</p>
+                    <hr class="footerTop__line" /><a class="footerTop__link" href="#">Коттеджные поселки</a><a
+                        class="footerTop__link" href="#">Коттеджи</a><a class="footerTop__link" href="#">Таунхаусы</a><a
+                        class="footerTop__link" href="#">Участки</a>
+                </div>
+                <div class="footerTop__item">
+                    <p class="footerTop__title">Город</p>
+                    <hr class="footerTop__line" /><a class="footerTop__link" href="#">Жилые комплексы</a><a
+                        class="footerTop__link" href="#">Элитные квартиры в Москве</a>
+                </div>
+                <div class="footerTop__item">
+                    <p class="footerTop__title">Эксклюзивные предложения</p>
+                    <hr class="footerTop__line" /><a class="footerTop__link" href="#">Эксклюзивные дома</a><a
+                        class="footerTop__link last" href="#">Эксклюзивные квартиры</a>
+                </div>
+                <div class="footerTop__item">
+                    <p class="footerTop__title">Информация</p>
+                    <hr class="footerTop__line" /><a class="footerTop__link" href="#">Блог</a><a class="footerTop__link"
+                                                                                                 href="#">Контакты</a><a class="footerTop__link" href="#">О компании</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerMiddle">
+        <div class="w-page">
+            <div class="footerMiddle__items">
+                <div class="footerMiddle__item">
+                    <p class="footerMiddle__text">© 2020 «Vesco Realty»</p>
+                    <p class="footerMiddle__text">Дизайн и разработка - <a class="footerMiddle__link" href="https://weblight.ru"
+                                                                           target="_blank">Weblight.ru</a></p>
+                </div>
+                <div class="footerMiddle__item">
+                    <p class="footerMiddle__text">ООО «Веско Групп»</p>
+                    <p class="footerMiddle__text">ОГРН 1147746264599 / ИНН 7714930244</p>
+                </div>
+                <div class="footerMiddle__item">
+                    <p class="footerMiddle__text">Адрес: 123290, Москва,</p>
+                    <p class="footerMiddle__text">1-й Магистральный тупик 5а</p>
+                </div>
+                <div class="footerMiddle__item"><a class="footerMiddle__link" href="Weblight.ru" target="_blank">Контакты /
+                    Схема проезда</a><a class="footerMiddle__link" href="Weblight.ru" target="_blank">Политика
+                    конфиденциальности</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <div class="w-page">
+            <p class="footerBottom__text">Вся представленная информация на сайте не является публичной офертой.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/lightgallery.min.js"></script>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/materialize.min.js"></script>
+<script src="./js/jquery.selectric.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/lightSwiper.js"></script>
+</body>
+
+</html>

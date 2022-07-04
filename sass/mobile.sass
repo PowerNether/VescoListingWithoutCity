@@ -1,0 +1,294 @@
+@media screen and ( max-width: 767px )
+    html
+        height: auto
+    body
+        min-width: 100%
+    .w-page
+        padding: 0 20px
+        width: 100%
+    .bread
+        padding-right: 140px
+        flex-wrap: wrap
+        margin-bottom: 16px
+        .bread__item
+            margin-bottom: 8px
+        .bread__link
+            top: 0
+            transform: translateY(0%)
+    .pageTabs
+        flex-direction: column
+        .tabs
+            width: 100%
+            overflow-y: auto
+            margin-bottom: 16px
+        .pageTabs__btn
+            width: 100%
+            justify-content: center
+    .form
+        width: 100%
+        .form__bg
+            width: calc(100% + 40px)
+            left: -20px
+        .form__inputs
+            width: auto
+            flex-wrap: wrap
+            margin: 0 -8px 16px
+            .form__select
+                width: calc(100% / 2 - 16px)
+                margin: 0 8px 16px
+                height: 48px
+            .form__input
+                width: calc(100% / 2 - 16px)
+                margin: 0 8px 16px
+                height: 48px
+            .form__another
+                width: calc(100% / 2 - 16px)
+                margin: 0 8px 16px
+                height: 48px
+        .form__search
+            flex-wrap: wrap
+            .form__input
+                width: 100%
+                margin: 0 0 16px
+        .form__submit
+            flex-direction: column
+            .form__tags
+                align-items: flex-start
+                width: 100%
+                margin-bottom: 16px
+                .form__text
+                    width: 25%
+                .tags
+                    width: auto
+                    display: flex
+                    flex-wrap: wrap
+                    margin-bottom: -8px
+                .form__tag
+                    margin-bottom: 8px
+            .form__btns
+                width: 100%
+                .form__btn
+                    width: 100%
+
+    .popularCategories
+        flex-wrap: wrap
+        .popularCategories__tag
+            margin-bottom: 8px
+
+    .columns
+        flex-direction: column
+    .leftColumn
+        margin-right: 0
+        .sorting
+            flex-wrap: wrap
+            margin-bottom: 24px
+            .sorting__amount
+                width: calc(100% / 2 - 16px )
+                margin: 0 8px 8px
+            .sorting__dist
+                justify-content: flex-end
+                width: calc(100% / 2 - 16px )
+                margin: 0 8px 8px
+            .sorting__number
+                width: calc(100% / 2 - 16px )
+                margin: 0 8px 8px
+            .sorting__views
+                justify-content: flex-end
+                width: calc(100% / 2 - 16px )
+                margin: 0 8px 8px
+        .products__item
+            min-width: auto
+            width: 100%
+            flex-direction: column
+            height: auto
+            .item__preview
+                width: 100%
+                position: relative
+            .item__overlay
+                width: 100%
+            .item__slider
+                width: 100%
+            .item__content
+                width: 100%
+        .moreProducts
+            .moreProducts__prev
+                min-width: 38px
+            .moreProducts__next
+                min-width: 38px
+    .rightColumn
+        max-width: 100%
+        .aroundRight
+            w
+    .selection
+        width: 100%
+        .selection__tabs .tabs
+            overflow-y: auto
+        .selection__tab
+            justify-content: space-between
+            flex-wrap: wrap
+            margin: 0
+        .selection__items
+            width: calc(100% / 2 - 16px)
+            margin: 0 0 16px
+
+    footer
+        .footerTop__items
+            align-items: flex-start
+            flex-wrap: wrap
+            margin: 0 -16px -16px
+        .footerTop__item
+            margin: 0 16px 16px
+            width: calc( 100% / 2 - 32px )
+        .footerMiddle__items
+            align-items: flex-start
+            flex-wrap: wrap
+            margin: 0 -16px -16px
+        .footerMiddle__item
+            margin: 0 16px 16px
+            width: calc( 100% / 2 - 32px )
+    .products__map
+        .map__favorite
+            margin-left: 16px
+@media screen and ( max-width: 600px )
+    .popularCategories__delimiter
+        display: none
+    .products__best
+        .best__link
+            position: relative
+            right: auto
+            bottom: auto
+            margin-top: 24px
+            width: 100%
+            text-align: center
+    .products__item
+        .item__tags
+            flex-wrap: wrap
+            margin: 0 -8px 24px
+            .item__text
+                width: calc(100% / 2 - 8px)
+                margin: 0 4px 8px
+                margin-right: 4px
+            .item__tag
+                width: calc(100% / 2 - 8px)
+                margin: 0 4px 8px
+        .item__content
+            .item__main
+                flex-wrap: wrap
+            .item__title
+                max-width: 100%
+                margin: 0 0 8px
+            .item__price
+                text-align: left
+                width: 100%
+            .item__desc
+                flex-wrap: wrap
+                .item__text
+                    margin: 0 4px 8px
+                    width: calc(100% / 3 - 8px )
+            .item__where
+                flex-wrap: wrap
+                .item__text-grey
+                    width: 30%
+                .item__village
+                    width: 70%
+                    margin: 0 0 4px
+                .item__street
+                    width: 100%
+
+    .selection .selection__items
+        width: 100%
+
+    .form
+        width: 100%
+        .form__inputs
+            width: auto
+            flex-wrap: wrap
+            margin: 0 -8px 16px
+            .form__select
+                width: 100%
+                margin: 0 8px 16px
+                height: 48px
+            .form__input
+                width: 100%
+                margin: 0 8px 16px
+                height: 48px
+            .form__another
+                width: 100%
+                margin: 0 8px 16px
+                height: 48px
+        .form__submit
+            .form__tags
+                flex-direction: column
+                .tags
+                    margin-top: 16px
+            .form__btns
+                flex-direction: column
+                flex-wrap: wrap
+                width: 100%
+                .form__btn
+                    width: 100%
+                    margin: 16px 0 0
+    .products__map
+        .map__overlay
+            flex-direction: column
+            align-items: flex-end
+            padding: 0 4px 12px
+        .map__link:first-of-type
+            margin-left: 0
+        .map__link
+            order: 2
+            margin-top: 4px
+        .map__link, .map__favorite
+            margin-left: 8px
+
+@media screen and ( max-width: 425px )
+    .pageTabs__btn
+        font-size: 14px
+    .form
+        .form__settings
+            margin: 0 0 8px
+    .leftColumn
+        .products__best
+            padding: 20px
+            .best__desc
+                flex-direction: column
+                align-items: flex-start
+        .sorting
+            flex-direction: column
+            .sorting__amount
+                width: 100%
+            .sorting__dist
+                justify-content: flex-start
+                width: 100%
+            .sorting__number
+                width: 100%
+            .sorting__views
+                justify-content: flex-start
+                width: 100%
+    .products__item
+        .item__content
+            .item__tags
+                .item__text
+                    width: 100%
+                .item__tag
+                    width: 100%
+            .item__desc
+                flex-wrap: wrap
+                .item__text
+                    margin: 0 4px 8px
+                    width: calc(100% / 2 - 8px )
+            .item__btns
+                flex-direction: column
+                .item__btn
+                    width: 100%
+                    margin: 0 0 8px
+                .item__link
+                    width: 100%
+                    line-height: 40px
+                    margin: 0
+                    justify-content: flex-start
+    footer
+        .footerTop__item
+            width: calc( 100% / 1 - 32px )
+        .footerMiddle__item
+            width: calc( 100% / 1 - 32px )
