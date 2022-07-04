@@ -57,8 +57,10 @@ if (detail__tabs !== null) {
 // $(".tabs").tabs();
 
 $(".detail-toggle").on("click", function() {
-  $(this).toggleClass("rotate")
-  $(this).parent().parent().parent().parent().find(".item__detail").slideToggle()
+  $(this).toggleClass("rotate");
+  $(this).parent().parent().parent().parent().find(".item__detail").slideToggle();
+  $(this).parent().parent().parent().parent().find('.detail__line').css('width', $(this).parent().parent().parent().parent().find('.detail__tab.active').width() + 'px');
+  $(this).parent().parent().parent().parent().find('.detail__line').css('left', $(this).parent().parent().parent().parent().find('.detail__tab.active').position().left + 40 + 'px');
 })
 $(".detail__close").on("click", function() {
   $(this).parent().parent().parent().find(".item__detail").slideToggle()
